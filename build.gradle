@@ -27,6 +27,7 @@ bootRun.environment([
         "SPRING_DATASOURCE_URL": developmentDbUrl,
         "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "*",
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+        "MANAGEMENT_HEALTH_PROBES_ENABLED": true
 ])
 
 test.environment([
@@ -34,6 +35,7 @@ test.environment([
         "SPRING_DATASOURCE_URL": testDbUrl,
         "MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE": "*",
         "MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS": "always",
+        "MANAGEMENT_HEALTH_PROBES_ENABLED": true
 ])
 flyway {
 url = developmentDbUrl
